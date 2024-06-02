@@ -2,20 +2,20 @@ import requests
 import json
 
 anger_score = None
-        disgust_score = None
-        fear_score = None
-        joy_score = None
-        sadness_score = None
-        dominant_emotion_key = None
+disgust_score = None
+fear_score = None
+joy_score = None
+sadness_score = None
+dominant_emotion_key = None
 
-    result = {
-        'anger': anger_score,
-        'disgust': disgust_score,
-        'fear': fear_score,
-        'joy': joy_score,
-        'sadness': sadness_score,
-        'dominant_emotion': dominant_emotion_key
-    }
+result = {
+    'anger': anger_score,
+    'disgust': disgust_score,
+    'fear': fear_score,
+    'joy': joy_score,
+    'sadness': sadness_score,
+    'dominant_emotion': dominant_emotion_key
+}
 
 def emotion_detector(text_to_analyze):
     url1 = "https://sn-watson-emotion.labs.skills.network/v1/watson.runtime.nlp.v1/NlpService/EmotionPredict"
